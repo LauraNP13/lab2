@@ -1,0 +1,116 @@
+img {
+  width: 70%;
+  height: auto;
+
+  border: solid 5px;
+  border-color: black;
+}
+
+/* -------- */
+
+.filtre {
+  width: 500px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* -------- */
+
+.img-5 {
+  filter: blur(2px);
+}
+
+.img-5:hover {
+  filter: none;
+}
+
+/* -------- */
+
+.img-6 {
+  filter: brightness(125%);
+}
+
+.img-6:hover {
+  filter: none;
+}
+
+/* -------- */
+
+.img-7 {
+  filter: contrast(90%);
+}
+
+.img-7:hover {
+  filter: none;
+}
+
+/* -------- */
+
+.img-8 {
+  filter: saturate(75%);
+}
+
+.img-8:hover {
+  filter: none;
+}
+
+/* -------- */
+
+.img-9 {
+  filter: grayscale(80%);
+}
+
+.img-9:hover {
+  filter: none;
+}
+
+/* -------- */
+
+.img-10 {
+  filter: sepia(40%);
+}
+
+.img-10:hover {
+  filter: none;
+}
+
+/* -------- */
+
+.img-11 {
+  filter: invert(25%);
+}
+
+.img-11:hover {
+  filter: none;
+}
+
+/* -------- */
+
+.img-12 {
+  filter: opacity(70%);
+}
+
+.img-12:hover {
+  filter: none;
+}
+
+/* -------- */
+
+.img-13 {
+  filter: hue-rotate(80deg);
+}
+
+.img-13:hover {
+  filter: none;
+}
+
+/* -------- */
+
+.img-14 {
+  filter: drop-shadow(20px 10px 3px);
+}
+
+.img-14:hover {
+  filter: none;
+}
