@@ -1,0 +1,87 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+.card {
+  padding: 24px;
+  border: 1px solid #aaa;
+  border-radius: 12px;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin: 24px 0 12px;
+}
+
+.card p {
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.card button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* ^^ original */
+
+/* ------------------------ */
+
+:root {
+  --border-corners: 12px;
+  --spacing-s: 12px;
+  --spacing-m: 24px;
+}
+/* border-corners = border-radius
+s i 'spacing-s' står for small og m for medium */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-m);
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+.card {
+  padding: var(--spacing-m);
+  border: 1px solid #aaa;
+  border-radius: var(--border-corners);
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: var(--border-corners);
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin: var(--spacing-m) 0 var(--spacing-s);
+}
+
+.card p {
+  line-height: 1.6;
+  margin-bottom: var(--spacing-m);
+}
+
+.card button {
+  padding: var(--spacing-s) var(--spacing-m);
+  border: none;
+  border-radius: var(--border-corners);
+  cursor: pointer;
+}
