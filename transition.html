@@ -3,35 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="generel.css" />
-    <link rel="stylesheet" href="transition.css" />
+    <link rel="stylesheet" href="css/generel.css" />
+    <link rel="stylesheet" href="css/transition.css" />
     <title>Transition</title>
   </head>
   <body>
     <header></header>
 
     <main>
+      <h1>Transitions</h1>
+      <p>Glidende overgang fra én tilstand til en anden</p>
+      <p>
+        Et element på siden ser ud på én måde og når man holder musen over (hover), ændrer det sig
+      </p>
+      <h2>Øvelse L2.4</h2>
+      <p>Webside med et grid: to kolonner og to rækker = 4 celler</p>
+      <p>
+        Celle 1: billede med lidt skygge. Ved hover flyttes billedet lidt op og skyggen bliver
+        større
+      </p>
+      <p>Celle 2: cirkulær form, mørk. Ved hover lyser den op (bliver langsomt lysere)</p>
+      <p>Celle 3: billede. Ved hover roteres det 90 grader</p>
+      <p>Celle 4: billede. Ved hover aktiveres 3 filtre</p>
+
       <!-- <div>Boks</div> -->
 
-      <div>
-      <img 
-      class="sti"
-      src="images/jeju_sti.jpg" alt="">
+      <section>
+        <div>
+          <p>Celle 1</p>
+          <img class="sti" src="images/jeju_sti.jpg" alt="" />
+        </div>
 
+        <div>
+          <p>Celle 2</p>
+          <div class="circle"></div>
+        </div>
 
-      <img 
-      class="tempel"
-      src="images/tempel.jpg" alt="">
+        <div>
+          <p>Celle 3</p>
+          <img class="ramme" src="images/jeju_ramme.jpg" alt="" />
+        </div>
 
-      <img 
-      class="ramme"
-      src="images/jeju_ramme.jpg" alt="">
-
-      <img 
-      class="stop"
-      src="images/jeju_stop.jpg" alt="">
-      </div>
-
+        <div>
+          <p>Celle 4</p>
+          <img class="stop" src="images/jeju_stop.jpg" alt="" />
+        </div>
+      </section>
     </main>
 
     <footer></footer>

@@ -6,23 +6,31 @@ img {
   border-color: black;
 }
 
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.img-1,
+.img-2,
+.img-3 {
+  width: var(--cell-size);
+  height: var(--cell-size);
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 .img-1 {
   object-fit: cover;
-  width: 300px;
-  height: 300px;
 }
 
 .img-2 {
   object-fit: contain;
-  width: 300px;
-  height: 300px;
 }
 
 .img-3 {
   object-fit: cover;
   object-position: 75%;
-  width: 300px;
-  height: 300px;
 }
 
 /* opgaven siger at det tredje billede skal være centreret, men så ligner det bare billede 1. 

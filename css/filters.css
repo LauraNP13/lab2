@@ -1,3 +1,15 @@
+h1,
+h2,
+p {
+  margin-left: 20px;
+}
+
+/* --------------- */
+
+div {
+  text-align: center;
+}
+
 img {
   width: 70%;
   height: auto;
@@ -13,6 +25,7 @@ img {
   height: 400px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-self: center;
 }
 
 /* -------- */
@@ -28,7 +41,7 @@ img {
 /* -------- */
 
 .img-6 {
-  filter: brightness(125%);
+  filter: brightness(150%);
 }
 
 .img-6:hover {
@@ -38,7 +51,7 @@ img {
 /* -------- */
 
 .img-7 {
-  filter: contrast(90%);
+  filter: contrast(130%);
 }
 
 .img-7:hover {
@@ -48,7 +61,7 @@ img {
 /* -------- */
 
 .img-8 {
-  filter: saturate(75%);
+  filter: saturate(250%);
 }
 
 .img-8:hover {
@@ -58,7 +71,7 @@ img {
 /* -------- */
 
 .img-9 {
-  filter: grayscale(80%);
+  filter: grayscale(85%);
 }
 
 .img-9:hover {
@@ -68,7 +81,7 @@ img {
 /* -------- */
 
 .img-10 {
-  filter: sepia(40%);
+  filter: sepia(70%);
 }
 
 .img-10:hover {
@@ -98,7 +111,7 @@ img {
 /* -------- */
 
 .img-13 {
-  filter: hue-rotate(80deg);
+  filter: hue-rotate(120deg);
 }
 
 .img-13:hover {

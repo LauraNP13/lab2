@@ -12,41 +12,68 @@ linear = samme tempo i hele rykket */
     transform: translateX(100%);
 } */
 
-* {
+/* .sti, .tempel, .stop, .ramme {
   margin-top: 25px;
   margin-bottom: 25px;
+} */
+
+h2 {
+  margin-top: 50px;
 }
 
 div {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  width: 100%;
-  height: auto;
-}
-
-.sti {
-  width: 300px;
-  height: 300px;
-  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.4);
-  &:hover {
-    box-shadow: 0 32px 48px rgba(0, 0, 0, 0.8);
-    transform: translateY(-30px);
+  margin-top: 20px;
+  text-align: center;
+  p {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 
-.tempel {
-  width: 300px;
-  height: 300px;
-  
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.sti {
+  width: var(--cell-size);
+  height: var(--cell-size);
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.4);
+  &:hover {
+    box-shadow: 0 24px 32px rgba(0, 0, 0, 0.8);
+    transform: translateY(-25px);
+    margin-top: 10px;
+  }
+}
+
+.circle {
+  aspect-ratio: 1/1;
+  justify-self: center;
+  align-self: center;
+  border: solid 150px rgb(34, 34, 34);
+  border-radius: 50%;
+  &:hover {
+    border-color: rgb(97, 114, 114);
+    transition: 0.8s ease;
+  }
+}
+/* aspect-ratio gør formen kvadratisk - dvs. cirklen holder sin runde form, i stedet for at være oval og blive strukket */
+
+.ramme {
+  width: var(--cell-size);
+  height: var(--cell-size);
+  object-fit: cover;
+  overflow: hidden;
+  transition: transform 1s ease;
+  &:hover {
+    transform: rotate(90deg);
+  }
 }
 
 .stop {
-  width: 300px;
-  height: 300px;
-}
-
-.ramme {
-  width: 300px;
-  height: 300px;
+  width: var(--cell-size);
+  height: var(--cell-size);
+  &:hover {
+    filter: saturate(170%) hue-rotate(35deg) brightness(120%);
+  }
 }
