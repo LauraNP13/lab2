@@ -1,0 +1,13 @@
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* div {
+
+} */
+
+.kon-1, .kon-2, .kon-3, .kon-4 {
+    width: var(--cell-size-m);
+    height: var(--cell-size);
+}

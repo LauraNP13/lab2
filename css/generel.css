@@ -1,0 +1,8 @@
+:root {
+  --cell-size: 300px;
+  --cell-size-m: 400px
+}
+
+* {
+  justify-self: center;
+}

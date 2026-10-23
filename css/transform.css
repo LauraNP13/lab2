@@ -1,0 +1,58 @@
+div {
+  margin-bottom: 30px;
+}
+
+.koncert {
+  width: 400px;
+  transform: rotate(180deg);
+}
+
+.toge {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+/* ^^ grid-template-columns er udfyldt ud fra 'Grid og auto-fit', gennemgået torsdag 22/10 */
+
+.tog-lille {
+  height: 300px;
+  margin-bottom: 40px;
+
+  transform: rotate(45deg) scale(0.5);
+  transform-origin: 0 100%;
+}
+
+.tog-stor {
+  height: 300px;
+  transform: rotate(-90deg) scale(1.5);
+
+  /* transform: scale(1.5); */
+  /* transform-origin: 0 100%; */
+}
+
+.div-tempel {
+  width: 300px;
+  height: 400px;
+  margin-top: 80px;
+  justify-self: right;
+  border: 8px solid rgb(114, 164, 151);
+}
+
+.tempel {
+  height: 400px;
+  transform: translateX(30px);
+}
+
+p:last-child {
+  /* transform: rotate(10deg) skew(10deg); */
+  transform: skew(-25deg);
+}
+
+div:last-child {
+  margin-top: 60px;
+  border: 3px solid rgb(199, 199, 199);
+  width: fit-content;
+  background-color: antiquewhite;
+  transform: rotate(25deg) skew(25deg);
+  /* transform: skew(-10deg); */
+}
